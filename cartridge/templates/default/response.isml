@@ -1,0 +1,1 @@
+<isprint value="${JSON.stringify(pdict.jsonrpc_response)}" encoding="off">

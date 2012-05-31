@@ -1,0 +1,34 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "DTD/xhtml1-transitional.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"> 
+<head> 
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+    <title>DW Script Terminal</title> 
+    <script type="text/javascript">
+    	var _dwurl = '${URLUtils.url("Terminal-Eval")}';
+    	var _dwserver = '${dw.system.System.getInstanceHostname()}';
+    </script>
+    
+    <script type="text/javascript" src="${URLUtils.staticURL('/js/jquery-1.7.1.min.js')}"></script>
+    <script type="text/javascript" src="${URLUtils.staticURL('/js/jquery.mousewheel-min.js')}"></script> 
+    <script type="text/javascript" src="${URLUtils.staticURL('/js/jquery.terminal.js')}"></script>
+    
+    <script>
+    jQuery(document).ready(function($) {
+        $(document.documentElement).terminal(_dwurl, {
+            login: true,
+            greetings: "Welcome to " + _dwserver,
+            prompt: 'js>'
+        });
+        
+        $('body').css('display', 'none');
+    });
+    
+    </script> 
+ 
+    <link href="${URLUtils.staticURL('/css/console.css')}" type="text/css" rel="stylesheet" />
+
+</head> 
+<body> 
+	<div id="term_demo" class="terminal"></div>
+</body> 
+</html> 
