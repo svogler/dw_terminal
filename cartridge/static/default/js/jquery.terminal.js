@@ -984,7 +984,7 @@ function get_stack(caller) {
                             array = array.concat(str_parts(tmp[0].substring(first_len), num_chars));
                         } else {
                             array = [tmp[0]];
-                        }
+                        } 
                         // process rest of the lines
                         for (i=1; i<tmp.length; ++i) {
                             if (tmp[i].length > num_chars) {

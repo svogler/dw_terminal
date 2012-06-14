@@ -296,18 +296,6 @@
       </node>
     </segment>
   </branch>
-  <branch basename="_ANONYMOUS_BRANCH_3">
-    <segment>
-      <node>
-        <pipelet-node pipelet-name="GetBasket" pipelet-set-identifier="bc_api">
-          <config-property key="Create" value="true"/>
-          <key-binding alias="null" key="Basket"/>
-          <key-binding alias="null" key="StoredBasket"/>
-        </pipelet-node>
-        <node-display x="0" y="1"/>
-      </node>
-    </segment>
-  </branch>
   <branch basename="Error">
     <segment>
       <node>
